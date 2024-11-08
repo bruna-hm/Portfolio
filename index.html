@@ -7,13 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
     .title-main {
       font-family: "IBM Plex Sans", sans-serif;
@@ -52,20 +50,21 @@
 
 <body class="main flex-col m-8 h-screen text-white bg-fixed bg-cover bg-[url('./static/images/background.jpg')] sm:grid sm:m-0 md:m-0"> 
   <main class="flex-col h-full text-center justify-center space-y-8 gap-5 sm:grid sm:grid-cols-12 sm:grid-rows-6 sm:space-y-3 sm:p-5 md:grid-rows-3">
-    <header class="col-span-2 backdrop-blur p-14 sm:col-start-2 sm:col-end-12 sm:row-span-1">
-        <div class="title-main text-3xl text-zinc-950 tracking-wide sm:text-6xl">
+    <header class="col-span-2 backdrop-blur-sm p-14 sm:col-start-2 sm:col-end-12 sm:row-span-1">
+        <h1 class="title-main text-3xl text-zinc-950 tracking-wide sm:text-6xl">
           Olá - Sou a
           <span class="title-main2 text-fuchsia-700">
             Bruna H. Matsunaga
           </span>  
-        </div>    
+        </h1>    
     </header>
     <section class="col-span-4 row-span-6 rounded-lg border border-violet-800 bg-neutral-950/75 space-y-10 p-4 sm:p-16 sm:col-span-8 sm:row-span-4 md:row-span-3">
         <div class="grid lg:flex sm:space-x-6">
-        <img src="./static/images/perfil.jpg" class="h-60 w-50 rounded-lg brightness-75 place-self-center sm:place-self-start md:place-self-center md:h-60 md:w-50 lg:h-60 lg:w-50">        
-        <h2 class="title text-center text-4xl text-teal-700 place-self-center sm:place-self-end sm:text-5xl md:place-self-center md:text-4xl lg:text-5xl lg:place-self-end">
+          <img src="./static/images/perfil.jpg" class="h-60 w-50 rounded-lg brightness-75 place-self-center sm:place-self-start md:place-self-center md:h-60 md:w-50 lg:h-60 lg:w-50">        
+          <h2 class="title text-center text-4xl text-teal-700 place-self-center sm:place-self-end sm:text-5xl md:place-self-center md:text-4xl lg:text-5xl lg:place-self-end">
           Breve descrição:
-        </h2></div>
+          </h2>
+        </div>
         <p class="text-body text-sm text-justify tracking-normal leading-normal place-self-center sm:text-xl sm:tracking-wider sm:leading-relaxed md:text-base md:tracking-none md:leading-relaxed lg:text-xl">
           Sou a Bruna, nasci e moro em São José dos Campos - São Paulo, Brasil. 
           <br>Estudante de Análise e Desenvolvimento de Sistemas na FATEC-Jessen Vidal. Formada em História-licenciatura pela UFOP,
@@ -168,24 +167,20 @@
         Não hesite em mandar uma mensagem!
       </p>
       <div class="flex justify-self-center">
-        <svg class="w-6 h-6 stroke-orange-500 fill-none self-center" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-        </svg>
-        <p class="text-lg text-white">
-          brunaahm@gmail.com
+        <p class="text-lg text-white justify-self-center">
+          brunaahm<span class="text-orange-500">@</span>gmail.com
         </p>
       </div>
     </section>
     <footer class="col-span-12 rounded-lg bg-violet-500/50">
-    <div class="p-4 md:py-4">
+      <div class="p-4 md:py-4">
         <span class="block text-lg text-zinc-900 font-semibold sm:text-center">
           © 2024 -<a href="https://github.com/bruna-hm" class="hover:underline">
-          Bruna H. Matsunaga.</a>
+          Bruna H. M.</a>
           Todos os direitos reservados.
         </span>
-    </div>
+      </div>
     </footer>
   </main>
 </body>
-
 </html>

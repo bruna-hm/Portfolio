@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
   <style>
@@ -12,7 +12,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
     .title-main {
       font-family: "IBM Plex Sans", sans-serif;
@@ -29,11 +28,6 @@
       font-weight: 400;
       font-style: normal;
     }
-    .title-button{
-      font-family: "Pixelify Sans", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-    }  
     .title-form {
       font-family: "Roboto", serif;
       font-weight: 500;
@@ -47,7 +41,7 @@
   </style>
 </head>
 
-<main id="Home" class="flex flex-col p-8 bg-no-repeat bg-cover bg-[url('./static/images/4248.jpg')] text-center sm:grid sm:grid-cols-1 md:bg-cover md:m-0 md:bg-cover md:w-100">
+<main id="Home" class="flex flex-col p-8 bg-no-repeat bg-cover text-center sm:grid sm:grid-cols-1 md:bg-cover md:m-0 md:bg-cover md:w-100">
 
   <nav class="mt-12 md:h-40 md:m-0 align-self-center">
     <h5 class="title-main text-4xl md:text-6xl text-white md:m-16">BRUNA H. M.</h5>
@@ -55,11 +49,11 @@
   
     <header class="grid h-96 grid-cols-1 gap-4 m-20 md:grid-cols-4">
 
-      <a href="#Sobre" class="rounded-3xl grid bg-gray-500/75 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110 md:col-span-2 md:row-span-4 md:grid-rows-7">
+      <a href="#Sobre" class="rounded-3xl grid bg-gray-950 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110 md:col-span-2 md:row-span-4 md:grid-rows-7">
         <div class="title-main2 row-start-1 text-zinc-200 text-start text-md md:text-xl p-4">
           <h3>SOBRE</h3>
         </div>
-        <div class="text-body row-start-4 rows-span-2 flex-row text-md md:text-4xl p-2">
+        <div class="text-body row-start-4 text-zinc-700 rows-span-2 flex-row text-md md:text-4xl p-2">
           <p>Suporte técnico | Estudante de ADS</p>
         </div>
         <div class="title-main2 row-start-7 text-zinc-200 text-start text-md md:text-xl p-4">
@@ -67,15 +61,15 @@
         </div>
       </a>
 
-      <a href="#Projetos" class="container grid grid-rows-3 rounded-3xl md:col-span-2 md:row-span-2 bg-gray-700/75 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
+      <a href="#Projetos" class="container grid grid-rows-3 rounded-3xl md:col-span-2 md:row-span-2 bg-gray-600 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
         <p class="title-main2 text-zinc-200 text-md md:text-xl row-start-3">PROJETOS</p>
       </a>
       
-        <a href="#Habilidades" class="container grid grid-rows-3 rounded-3xl md:col-span-1 md:row-span-2 bg-gray-600/75 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
+        <a href="#Habilidades" class="container grid grid-rows-3 rounded-3xl md:col-span-1 md:row-span-2 bg-gray-700 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
           <p class="title-main2 text-zinc-200 text-md md:text-xl row-start-3">HABILIDADES</p>
         </a>
 
-        <a href="#Certificados" class="container grid grid-rows-3 rounded-3xl md:col-span-1 md:row-span-2 bg-gray-800/75 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
+        <a href="#Certificados" class="container grid grid-rows-3 rounded-3xl md:col-span-1 md:row-span-2 bg-gray-800 hover:bg-gray-400/75 transition ease-in-out delay-150 hover:scale-110">
           <p class="title-main2 text-zinc-200 text-md md:text-xl row-start-3">CERTIFICADOS</p>
         </a>
 
@@ -83,12 +77,11 @@
     
     <body>
 
-      <section id="Sobre" class="h-screen mt-16">
+      <section id="Sobre" class="h-screen mt-16 bg-zinc-950/75">
         <div class="container flex flex-col size-full p-16 space-y-8 justify-items-center items-center gap-x-10 md:grid md:grid-cols-7 space-y-8">
           <img class="rounded-full col-span-1 md:col-start-2 md:col-span-2" src="./static/images/perfil.jpg"/>
           <article class="text-body col-start-4 col-span-3 text-sm text-body text-justify indent-8 tracking-wider text-white sm:text-lg">
-            Estudante de Análise e Desenvolvimento de Sistemas na FATEC-Jessen Vidal. Formada em História-licenciatura pela UFOP,
-            lecionei durante alguns anos no Sistema Municipal de SJC. 
+            Estudante de Análise e Desenvolvimento de Sistemas na FATEC - Jessen Vidal. Formada em História-licenciatura pela UFOP - MG anteriormente.
             Sempre busquei me atualizar sobre a área de tecnologia e mais recentemente
             comecei a atuar como Suporte Técnico, sendo esse o pontapé incial para que eu decidisse me desenvolver e crescer na área.
             <br>Adoro as possibilidades de criação que 
@@ -102,18 +95,18 @@
       <section id ="Projetos" class="h-screen">
         <p class="title text-6xl text-white backdrop-blur-xl tracking-widest p-4">PROJETOS</p>
         <div class="container flex flex-col sm:grid sm:grid-cols-6 md:grid-rows-6 size-full p-8 md:p-16 md:space-x-8 justify-items-center items-center">
-          <a href="https://github.com/EquipeEcho/EasyScrum" class="flex flex-col w-full aspect-square col-start-2 col-span-2 row-start-3 items-center bg-zinc-800/75 hover:bg-zinc-700/50 rounded-lg z-10 ">
+          <a href="https://github.com/EquipeEcho/EasyScrum" class="flex flex-col w-full aspect-square col-start-2 col-span-2 row-start-3 items-center bg-gray-950 hover:bg-zinc-800/75 rounded-lg z-10 ">
           <img class="w-40 md:size-auto md:h-auto max-w-xs p-3" src="./static/images/LogoES.png" >
             <div class="flex flex-col justify-between p-2 leading-normal m-2">
               <h5 class="title-form mb-2 text-xl md:text-2xl font-bold tracking-wide text-white ">EasyScrum</h5>
-              <p class="text-sm mb-3 p-4 font-normal text-white md:text-body">Projeto desenvolvido no primeiro semestre do curso de ADS da FATEC, Jessen Vidal - SJC.</p>
+              <p class="text-body text-sm font-normal text-white md:text-lg">Projeto desenvolvido no primeiro semestre do curso de ADS da FATEC, Jessen Vidal - SJC.</p>
             </div>
           </a>
-          <a href="https://github.com/bruna-hm/AlienInvasionGame" class="flex flex-col w-full aspect-square mt-3 col-start-4 col-span-2 row-start-3 items-center bg-zinc-800/75 md:mt-0 hover:bg-zinc-700/50 rounded-lg">
+          <a href="https://github.com/bruna-hm/AlienInvasionGame" class="flex flex-col w-full aspect-square mt-3 col-start-4 col-span-2 row-start-3 items-center bg-gray-950 hover:bg-zinc-800/75 md:mt-0 rounded-lg">
           <img class="size-52 md:size-auto h-auto md:max-w-sm p-3" src="./static/images/alieninv.png" >
             <div class="flex flex-col justify-between p-2 leading-normal">
               <h5 class="title-form mb-2 text-xl md:text-2xl font-bold tracking-wide text-white">Alien Invasion Game</h5>
-              <p class="text-sm mb-3 p-4 sm:font-normal text-white md:text-body">Projeto desenvolvido a partir do livro Python Crash Course, para aprender mais sobre a lib pygame.</p>
+              <p class="text-body text-sm font-normal text-white md:text-lg">Projeto desenvolvido a partir do livro Python Crash Course, para aprender mais sobre a lib pygame.</p>
             </div>
           </a>
         </div>    
@@ -123,7 +116,7 @@
         <p class="title text-6xl text-white backdrop-blur-xl tracking-widest p-4">HABILIDADES</p>
         <div class="container flex-col space-y-8 sm:grid sm:grid-cols-4 grid-rows-6 size-full p-8 md:p-16 gap-8 justify-items-center items-center">
           <a href="./static/files/CurriculoBruna.pdf" class="title-button row-start-1 col-start-2 col-span-2 bg-teal-300/50 backdrop-blur-xl hover:backdrop-blur-sm text-white text-xl rounded-full tracking-wider p-4 transition ease-in-out delay-150 hover:scale-110" target="_blank">Currículo</a>
-          <div class="container flex-col col-start-2 row-start-3 rounded-lg p-8 bg-stone-950/75">
+          <div class="container flex-col col-start-2 row-start-3 rounded-lg p-8 bg-gray-950">
             <ul class="text-body text-white text-left text-md md:text-lg tracking-wide space-y-2 marker:text-teal-400 list-disc lg:list-inside">
               <li>Python básico</li> 
               <li>HTML & CSS básicos</li>
@@ -132,7 +125,7 @@
               <li>Git e Github básicos</li>
             </ul>
           </div>
-          <div class="container flex-col col-start-3 row-start-3 rounded-lg p-8 bg-stone-950/75">
+          <div class="container flex-col col-start-3 row-start-3 rounded-lg p-8 bg-gray-950">
             <ul class="text-body text-white text-left text-md md:text-lg tracking-wide space-y-2 marker:text-teal-400 list-disc lg:list-inside">
               <li>Inglês Avançado</li> 
               <li>Francês intermediário</li>
@@ -144,53 +137,29 @@
         </div>    
       </section>
 
-      <section id="Certificados" class="h-screen">
+      <section id="Certificados" class="h-fill md:h-screen">
         <p class="title text-6xl text-white backdrop-blur-xl tracking-widest pt-4">CERTIFICADOS</p>
-        <div class="container flex-col sm:grid sm:grid-cols-7 grid-rows-6 size-full p-16 space-y-8 text-center justify-items-center items-center">
+        <div class="container flex flex-col sm:grid sm:grid-cols-4 grid-rows-6 size-full text-center justify-items-center items-center">
 
-          <button data-modal-target="coursera" data-modal-toggle="coursera" class="title-button block col-start-3 col-span-3 row-start-2 text-white bg-teal-300/50 backdrop-blur-xl hover:backdrop-blur-sm font-medium rounded-xl text-xl px-5 py-2.5 text-center transition ease-in-out delay-150 hover:scale-110" type="button">
-            Suporte em TI do Google - Coursera 
-          </button>
-          <div id="coursera" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center">
-            <div class="p-12" style="width:50%; height:90vh;">
-              <div style="width: 100%; height: 100%;">
-                <embed src="./static/files/Coursera.pdf" type="application/pdf" style="width: 100%; height: 100%;">
-            </div>
-            </div>
-          </div>
-          
-          <button data-modal-target="ndg" data-modal-toggle="ndg" class="title-button block col-start-2 col-span-3 row-start-3 text-white bg-teal-300/50 backdrop-blur-xl hover:backdrop-blur-sm font-medium rounded-xl text-xl px-5 py-2.5 text-center transition ease-in-out delay-150 hover:scale-110" type="button">
-            NDG Linux Essentials - Cisco 
-          </button>
-          <div id="ndg" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center">
-            <div class="p-12" style="width:50%; height:90vh;">
-              <div style="width: 100%; height: 100%;">
-                <embed src="./static/files/Ndg.pdf" type="application/pdf" style="width: 100%; height: 100%;">
-            </div>
-            </div>
-          </div>  
+          <a href="./static/files/Coursera.pdf" class="col-start-2 row-start-2 md:self-start hover:bg-zinc-900 rounded-lg p-5 bg-gray-800 transition ease-in-out delay-150 hover:scale-110" download>
+            <p class="title-form text-lg font-normal text-white mb-2">Suporte em TI do Google - Coursera</p>
+            <img class="max-w-xs" src="./static/images/Coursera.jpg">
+          </a>
 
-          <button data-modal-target="l_essentials" data-modal-toggle="l_essentials" class="title-button block col-start-4 col-span-3 row-start-3 text-white bg-teal-300/50 backdrop-blur-xl hover:backdrop-blur-sm font-medium rounded-xl text-xl px-5 py-2.5 text-center transition ease-in-out delay-150 hover:scale-110" type="button">
-            Linux Essentials - LinuxTips 
-          </button>
-          <div id="l_essentials" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center">
-            <div class="p-12" style="width:50%; height:90vh;">
-              <div style="width: 100%; height: 100%;">
-                <embed src="./static/files/Linux_essentials.pdf" type="application/pdf" style="width: 100%; height: 100%;">
-            </div>
-            </div>
-          </div>  
+          <a href="./static/files/Ndg.pdf" class="col-start-3 row-start-2 md:self-start hover:bg-zinc-900 rounded-lg p-5 bg-gray-800 transition ease-in-out delay-150 hover:scale-110" download>
+            <p class="title-form text-lg font-normal text-white mb-2">NDG Linux Essentials - Cisco</p>
+            <img class="max-w-xs" src="./static/images/Ndg.jpg">
+          </a>
 
-          <button data-modal-target="p_essentials" data-modal-toggle="p_essentials" class="title-button block col-start-3 col-span-3 row-start-4 text-white bg-teal-300/50 backdrop-blur-xl hover:backdrop-blur-sm font-medium rounded-xl text-xl px-5 py-2.5 text-center transition ease-in-out delay-150 hover:scale-110" type="button">
-            Python Essentials - LinuxTips 
-          </button>
-          <div id="p_essentials" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center">
-            <div class="p-12" style="width:50%; height:90vh;">
-              <div style="width: 100%; height: 100%;">
-                <embed src="./static/files/Python_essentials.pdf" type="application/pdf" style="width: 100%; height: 100%;">
-            </div>
-            </div>
-          </div>   
+          <a href="./static/files/Linux_Essentials.pdf" class="col-start-2 row-start-4 hover:bg-zinc-900 rounded-lg p-5 bg-gray-950 transition ease-in-out delay-150 hover:scale-110" download>
+            <p class="title-form text-lg font-normal text-white mb-2">Linux Essentials - LinuxTips</p>
+            <img class="max-w-xs" src="./static/images/Linux_essentials.jpg">
+          </a>
+
+          <a href="./static/files/Python_essentials.pdf" class="col-start-3 row-start-4 hover:bg-zinc-900 rounded-lg p-5 bg-gray-950 transition ease-in-out delay-150 hover:scale-110" download>
+            <p class="title-form text-lg font-normal text-white mb-2">Python Essentials - LinuxTips</p>
+            <img class="max-w-xs" src="./static/images/Python_essentials.jpg">
+          </a>
 
         </div>    
       </section>

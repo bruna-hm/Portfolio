@@ -1,13 +1,16 @@
 html {
-    --s: 16px;
+    --s: 100px;
     /* control the size*/
-    --c1: #d992fc;
-    --c2: #343434;
+    --c1: #442641;
+    --c2: #252525;
 
-    --g: #0000 66%, var(--c1) 67% 98%, #0000;
+    --_g: #0000 24%,
+        var(--c2) 26% 34%, var(--c1) 36% 44%,
+        var(--c2) 46% 54%, var(--c1) 56% 64%,
+        var(--c2) 66% 74%, #0000 76%;
     background:
-        radial-gradient(30% 50% at 30% 100%, var(--g)),
-        radial-gradient(30% 50% at 70% 0%, var(--g)) var(--s) 0,
-        repeating-linear-gradient(90deg, var(--c1) 0 10%, var(--c2) 0 50%);
-    background-size: calc(10*var(--s)) calc(6*var(--s));
+        radial-gradient(100% 100% at 100% 0, var(--_g)),
+        radial-gradient(100% 100% at 0 100%, var(--_g)),
+        radial-gradient(var(--c2) 14%, var(--c1) 16%) calc(var(--s)/2) calc(var(--s)/2);
+    background-size: var(--s) var(--s);
 }

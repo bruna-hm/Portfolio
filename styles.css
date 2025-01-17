@@ -14,3 +14,59 @@ html {
         radial-gradient(var(--c2) 14%, var(--c1) 16%) calc(var(--s)/2) calc(var(--s)/2);
     background-size: var(--s) var(--s);
 }
+
+/* a div.text-body {
+    animation-duration: 3s;
+    animation-name: slidein;
+} */
+
+div.title-main2,
+p.title-main2 {
+    animation-duration: 8s;
+    animation-name: fadeIn;
+}
+
+a div.text-body {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    animation:
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(221, 221, 221);
+    }
+}
